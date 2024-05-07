@@ -18,26 +18,286 @@ abstract class RustLibApiImplPlatform extends BaseApiImpl<RustLibWire> {
     required super.portManager,
   });
 
+  CrossPlatformFinalizerArg
+      get rust_arc_decrement_strong_count_DartFnFutureResultStringU32Ptr => wire
+          ._rust_arc_decrement_strong_count_RustOpaque_flutter_rust_bridgefor_generatedRustAutoOpaqueInnerDartFnFutureResultStringu32Ptr;
+
+  CrossPlatformFinalizerArg
+      get rust_arc_decrement_strong_count_DartFnFutureStringPtr => wire
+          ._rust_arc_decrement_strong_count_RustOpaque_flutter_rust_bridgefor_generatedRustAutoOpaqueInnerDartFnFutureStringPtr;
+
+  CrossPlatformFinalizerArg
+      get rust_arc_decrement_strong_count_PinBoxFutureOutputResultStringU32Ptr =>
+          wire._rust_arc_decrement_strong_count_RustOpaque_flutter_rust_bridgefor_generatedRustAutoOpaqueInnerPinBoxdynFutureOutputResultStringu32SendstaticPtr;
+
+  CrossPlatformFinalizerArg
+      get rust_arc_decrement_strong_count_ResultStringU32Ptr => wire
+          ._rust_arc_decrement_strong_count_RustOpaque_flutter_rust_bridgefor_generatedRustAutoOpaqueInnerResultStringu32Ptr;
+
+  @protected
+  DartFnFutureResultStringU32
+      dco_decode_Auto_Owned_RustOpaque_flutter_rust_bridgefor_generatedRustAutoOpaqueInnerDartFnFutureResultStringu32(
+          dynamic raw);
+
+  @protected
+  DartFnFutureString
+      dco_decode_Auto_Owned_RustOpaque_flutter_rust_bridgefor_generatedRustAutoOpaqueInnerDartFnFutureString(
+          dynamic raw);
+
+  @protected
+  PinBoxFutureOutputResultStringU32
+      dco_decode_Auto_Owned_RustOpaque_flutter_rust_bridgefor_generatedRustAutoOpaqueInnerPinBoxdynFutureOutputResultStringu32Sendstatic(
+          dynamic raw);
+
+  @protected
+  ResultStringU32
+      dco_decode_Auto_Owned_RustOpaque_flutter_rust_bridgefor_generatedRustAutoOpaqueInnerResultStringu32(
+          dynamic raw);
+
+  @protected
+  FutureOr<ResultStringU32> Function(String)
+      dco_decode_DartFn_Inputs_String_Output_Auto_Owned_RustOpaque_flutter_rust_bridgefor_generatedRustAutoOpaqueInnerResultStringu32(
+          dynamic raw);
+
+  @protected
+  Object dco_decode_DartOpaque(dynamic raw);
+
+  @protected
+  DartFnFutureResultStringU32
+      dco_decode_RustOpaque_flutter_rust_bridgefor_generatedRustAutoOpaqueInnerDartFnFutureResultStringu32(
+          dynamic raw);
+
+  @protected
+  DartFnFutureString
+      dco_decode_RustOpaque_flutter_rust_bridgefor_generatedRustAutoOpaqueInnerDartFnFutureString(
+          dynamic raw);
+
+  @protected
+  PinBoxFutureOutputResultStringU32
+      dco_decode_RustOpaque_flutter_rust_bridgefor_generatedRustAutoOpaqueInnerPinBoxdynFutureOutputResultStringu32Sendstatic(
+          dynamic raw);
+
+  @protected
+  ResultStringU32
+      dco_decode_RustOpaque_flutter_rust_bridgefor_generatedRustAutoOpaqueInnerResultStringu32(
+          dynamic raw);
+
+  @protected
+  String dco_decode_String(dynamic raw);
+
   @protected
   int dco_decode_i_32(dynamic raw);
+
+  @protected
+  Uint8List dco_decode_list_prim_u_8_strict(dynamic raw);
+
+  @protected
+  int dco_decode_u_8(dynamic raw);
 
   @protected
   void dco_decode_unit(dynamic raw);
 
   @protected
+  int dco_decode_usize(dynamic raw);
+
+  @protected
+  DartFnFutureResultStringU32
+      sse_decode_Auto_Owned_RustOpaque_flutter_rust_bridgefor_generatedRustAutoOpaqueInnerDartFnFutureResultStringu32(
+          SseDeserializer deserializer);
+
+  @protected
+  DartFnFutureString
+      sse_decode_Auto_Owned_RustOpaque_flutter_rust_bridgefor_generatedRustAutoOpaqueInnerDartFnFutureString(
+          SseDeserializer deserializer);
+
+  @protected
+  PinBoxFutureOutputResultStringU32
+      sse_decode_Auto_Owned_RustOpaque_flutter_rust_bridgefor_generatedRustAutoOpaqueInnerPinBoxdynFutureOutputResultStringu32Sendstatic(
+          SseDeserializer deserializer);
+
+  @protected
+  ResultStringU32
+      sse_decode_Auto_Owned_RustOpaque_flutter_rust_bridgefor_generatedRustAutoOpaqueInnerResultStringu32(
+          SseDeserializer deserializer);
+
+  @protected
+  Object sse_decode_DartOpaque(SseDeserializer deserializer);
+
+  @protected
+  DartFnFutureResultStringU32
+      sse_decode_RustOpaque_flutter_rust_bridgefor_generatedRustAutoOpaqueInnerDartFnFutureResultStringu32(
+          SseDeserializer deserializer);
+
+  @protected
+  DartFnFutureString
+      sse_decode_RustOpaque_flutter_rust_bridgefor_generatedRustAutoOpaqueInnerDartFnFutureString(
+          SseDeserializer deserializer);
+
+  @protected
+  PinBoxFutureOutputResultStringU32
+      sse_decode_RustOpaque_flutter_rust_bridgefor_generatedRustAutoOpaqueInnerPinBoxdynFutureOutputResultStringu32Sendstatic(
+          SseDeserializer deserializer);
+
+  @protected
+  ResultStringU32
+      sse_decode_RustOpaque_flutter_rust_bridgefor_generatedRustAutoOpaqueInnerResultStringu32(
+          SseDeserializer deserializer);
+
+  @protected
+  String sse_decode_String(SseDeserializer deserializer);
+
+  @protected
   int sse_decode_i_32(SseDeserializer deserializer);
+
+  @protected
+  Uint8List sse_decode_list_prim_u_8_strict(SseDeserializer deserializer);
+
+  @protected
+  int sse_decode_u_8(SseDeserializer deserializer);
 
   @protected
   void sse_decode_unit(SseDeserializer deserializer);
 
   @protected
+  int sse_decode_usize(SseDeserializer deserializer);
+
+  @protected
   bool sse_decode_bool(SseDeserializer deserializer);
+
+  @protected
+  ffi.Pointer<wire_cst_list_prim_u_8_strict> cst_encode_String(String raw) {
+    // Codec=Cst (C-struct based), see doc to use other codecs
+    return cst_encode_list_prim_u_8_strict(utf8.encoder.convert(raw));
+  }
+
+  @protected
+  ffi.Pointer<wire_cst_list_prim_u_8_strict> cst_encode_list_prim_u_8_strict(
+      Uint8List raw) {
+    // Codec=Cst (C-struct based), see doc to use other codecs
+    final ans = wire.cst_new_list_prim_u_8_strict(raw.length);
+    ans.ref.ptr.asTypedList(raw.length).setAll(0, raw);
+    return ans;
+  }
+
+  @protected
+  int cst_encode_Auto_Owned_RustOpaque_flutter_rust_bridgefor_generatedRustAutoOpaqueInnerDartFnFutureResultStringu32(
+      DartFnFutureResultStringU32 raw);
+
+  @protected
+  int cst_encode_Auto_Owned_RustOpaque_flutter_rust_bridgefor_generatedRustAutoOpaqueInnerDartFnFutureString(
+      DartFnFutureString raw);
+
+  @protected
+  int cst_encode_Auto_Owned_RustOpaque_flutter_rust_bridgefor_generatedRustAutoOpaqueInnerPinBoxdynFutureOutputResultStringu32Sendstatic(
+      PinBoxFutureOutputResultStringU32 raw);
+
+  @protected
+  int cst_encode_Auto_Owned_RustOpaque_flutter_rust_bridgefor_generatedRustAutoOpaqueInnerResultStringu32(
+      ResultStringU32 raw);
+
+  @protected
+  PlatformPointer
+      cst_encode_DartFn_Inputs_String_Output_Auto_Owned_RustOpaque_flutter_rust_bridgefor_generatedRustAutoOpaqueInnerResultStringu32(
+          FutureOr<ResultStringU32> Function(String) raw);
+
+  @protected
+  PlatformPointer cst_encode_DartOpaque(Object raw);
+
+  @protected
+  int cst_encode_RustOpaque_flutter_rust_bridgefor_generatedRustAutoOpaqueInnerDartFnFutureResultStringu32(
+      DartFnFutureResultStringU32 raw);
+
+  @protected
+  int cst_encode_RustOpaque_flutter_rust_bridgefor_generatedRustAutoOpaqueInnerDartFnFutureString(
+      DartFnFutureString raw);
+
+  @protected
+  int cst_encode_RustOpaque_flutter_rust_bridgefor_generatedRustAutoOpaqueInnerPinBoxdynFutureOutputResultStringu32Sendstatic(
+      PinBoxFutureOutputResultStringU32 raw);
+
+  @protected
+  int cst_encode_RustOpaque_flutter_rust_bridgefor_generatedRustAutoOpaqueInnerResultStringu32(
+      ResultStringU32 raw);
+
+  @protected
+  int cst_encode_i_32(int raw);
+
+  @protected
+  int cst_encode_u_8(int raw);
+
+  @protected
+  void cst_encode_unit(void raw);
+
+  @protected
+  int cst_encode_usize(int raw);
+
+  @protected
+  void
+      sse_encode_Auto_Owned_RustOpaque_flutter_rust_bridgefor_generatedRustAutoOpaqueInnerDartFnFutureResultStringu32(
+          DartFnFutureResultStringU32 self, SseSerializer serializer);
+
+  @protected
+  void
+      sse_encode_Auto_Owned_RustOpaque_flutter_rust_bridgefor_generatedRustAutoOpaqueInnerDartFnFutureString(
+          DartFnFutureString self, SseSerializer serializer);
+
+  @protected
+  void
+      sse_encode_Auto_Owned_RustOpaque_flutter_rust_bridgefor_generatedRustAutoOpaqueInnerPinBoxdynFutureOutputResultStringu32Sendstatic(
+          PinBoxFutureOutputResultStringU32 self, SseSerializer serializer);
+
+  @protected
+  void
+      sse_encode_Auto_Owned_RustOpaque_flutter_rust_bridgefor_generatedRustAutoOpaqueInnerResultStringu32(
+          ResultStringU32 self, SseSerializer serializer);
+
+  @protected
+  void
+      sse_encode_DartFn_Inputs_String_Output_Auto_Owned_RustOpaque_flutter_rust_bridgefor_generatedRustAutoOpaqueInnerResultStringu32(
+          FutureOr<ResultStringU32> Function(String) self,
+          SseSerializer serializer);
+
+  @protected
+  void sse_encode_DartOpaque(Object self, SseSerializer serializer);
+
+  @protected
+  void
+      sse_encode_RustOpaque_flutter_rust_bridgefor_generatedRustAutoOpaqueInnerDartFnFutureResultStringu32(
+          DartFnFutureResultStringU32 self, SseSerializer serializer);
+
+  @protected
+  void
+      sse_encode_RustOpaque_flutter_rust_bridgefor_generatedRustAutoOpaqueInnerDartFnFutureString(
+          DartFnFutureString self, SseSerializer serializer);
+
+  @protected
+  void
+      sse_encode_RustOpaque_flutter_rust_bridgefor_generatedRustAutoOpaqueInnerPinBoxdynFutureOutputResultStringu32Sendstatic(
+          PinBoxFutureOutputResultStringU32 self, SseSerializer serializer);
+
+  @protected
+  void
+      sse_encode_RustOpaque_flutter_rust_bridgefor_generatedRustAutoOpaqueInnerResultStringu32(
+          ResultStringU32 self, SseSerializer serializer);
+
+  @protected
+  void sse_encode_String(String self, SseSerializer serializer);
 
   @protected
   void sse_encode_i_32(int self, SseSerializer serializer);
 
   @protected
+  void sse_encode_list_prim_u_8_strict(
+      Uint8List self, SseSerializer serializer);
+
+  @protected
+  void sse_encode_u_8(int self, SseSerializer serializer);
+
+  @protected
   void sse_encode_unit(void self, SseSerializer serializer);
+
+  @protected
+  void sse_encode_usize(int self, SseSerializer serializer);
 
   @protected
   void sse_encode_bool(bool self, SseSerializer serializer);
@@ -45,6 +305,13 @@ abstract class RustLibApiImplPlatform extends BaseApiImpl<RustLibWire> {
 
 // Section: wire_class
 
+// ignore_for_file: camel_case_types, non_constant_identifier_names, avoid_positional_boolean_parameters, annotate_overrides, constant_identifier_names
+// AUTO GENERATED FILE, DO NOT EDIT.
+//
+// Generated by `package:ffigen`.
+// ignore_for_file: type=lint
+
+/// generated by flutter_rust_bridge
 class RustLibWire implements BaseWire {
   factory RustLibWire.fromExternalLibrary(ExternalLibrary lib) =>
       RustLibWire(lib.ffiDynamicLibrary);
@@ -56,4 +323,314 @@ class RustLibWire implements BaseWire {
   /// The symbols are looked up in [dynamicLibrary].
   RustLibWire(ffi.DynamicLibrary dynamicLibrary)
       : _lookup = dynamicLibrary.lookup;
+
+  /// The symbols are looked up with [lookup].
+  RustLibWire.fromLookup(
+      ffi.Pointer<T> Function<T extends ffi.NativeType>(String symbolName)
+          lookup)
+      : _lookup = lookup;
+
+  void store_dart_post_cobject(
+    DartPostCObjectFnType ptr,
+  ) {
+    return _store_dart_post_cobject(
+      ptr,
+    );
+  }
+
+  late final _store_dart_post_cobjectPtr =
+      _lookup<ffi.NativeFunction<ffi.Void Function(DartPostCObjectFnType)>>(
+          'store_dart_post_cobject');
+  late final _store_dart_post_cobject = _store_dart_post_cobjectPtr
+      .asFunction<void Function(DartPostCObjectFnType)>();
+
+  void wire_greet(
+    int port_,
+    ffi.Pointer<wire_cst_list_prim_u_8_strict> name,
+  ) {
+    return _wire_greet(
+      port_,
+      name,
+    );
+  }
+
+  late final _wire_greetPtr = _lookup<
+          ffi.NativeFunction<
+              ffi.Void Function(
+                  ffi.Int64, ffi.Pointer<wire_cst_list_prim_u_8_strict>)>>(
+      'frbgen_frb_example_dart_minimal_wire_greet');
+  late final _wire_greet = _wire_greetPtr.asFunction<
+      void Function(int, ffi.Pointer<wire_cst_list_prim_u_8_strict>)>();
+
+  WireSyncRust2DartDco wire_hallo(
+    ffi.Pointer<wire_cst_list_prim_u_8_strict> name,
+  ) {
+    return _wire_hallo(
+      name,
+    );
+  }
+
+  late final _wire_halloPtr = _lookup<
+          ffi.NativeFunction<
+              WireSyncRust2DartDco Function(
+                  ffi.Pointer<wire_cst_list_prim_u_8_strict>)>>(
+      'frbgen_frb_example_dart_minimal_wire_hallo');
+  late final _wire_hallo = _wire_halloPtr.asFunction<
+      WireSyncRust2DartDco Function(
+          ffi.Pointer<wire_cst_list_prim_u_8_strict>)>();
+
+  void wire_hey(
+    int port_,
+    ffi.Pointer<wire_cst_list_prim_u_8_strict> name,
+  ) {
+    return _wire_hey(
+      port_,
+      name,
+    );
+  }
+
+  late final _wire_heyPtr = _lookup<
+          ffi.NativeFunction<
+              ffi.Void Function(
+                  ffi.Int64, ffi.Pointer<wire_cst_list_prim_u_8_strict>)>>(
+      'frbgen_frb_example_dart_minimal_wire_hey');
+  late final _wire_hey = _wire_heyPtr.asFunction<
+      void Function(int, ffi.Pointer<wire_cst_list_prim_u_8_strict>)>();
+
+  void wire_init_app(
+    int port_,
+  ) {
+    return _wire_init_app(
+      port_,
+    );
+  }
+
+  late final _wire_init_appPtr =
+      _lookup<ffi.NativeFunction<ffi.Void Function(ffi.Int64)>>(
+          'frbgen_frb_example_dart_minimal_wire_init_app');
+  late final _wire_init_app =
+      _wire_init_appPtr.asFunction<void Function(int)>();
+
+  void wire_minimal_adder(
+    int port_,
+    int a,
+    int b,
+  ) {
+    return _wire_minimal_adder(
+      port_,
+      a,
+      b,
+    );
+  }
+
+  late final _wire_minimal_adderPtr = _lookup<
+          ffi
+          .NativeFunction<ffi.Void Function(ffi.Int64, ffi.Int32, ffi.Int32)>>(
+      'frbgen_frb_example_dart_minimal_wire_minimal_adder');
+  late final _wire_minimal_adder =
+      _wire_minimal_adderPtr.asFunction<void Function(int, int, int)>();
+
+  void wire_rust_function(
+    int port_,
+    ffi.Pointer<ffi.Void> dart_callback,
+  ) {
+    return _wire_rust_function(
+      port_,
+      dart_callback,
+    );
+  }
+
+  late final _wire_rust_functionPtr = _lookup<
+          ffi
+          .NativeFunction<ffi.Void Function(ffi.Int64, ffi.Pointer<ffi.Void>)>>(
+      'frbgen_frb_example_dart_minimal_wire_rust_function');
+  late final _wire_rust_function = _wire_rust_functionPtr
+      .asFunction<void Function(int, ffi.Pointer<ffi.Void>)>();
+
+  void wire_yo(
+    int port_,
+    ffi.Pointer<wire_cst_list_prim_u_8_strict> name,
+  ) {
+    return _wire_yo(
+      port_,
+      name,
+    );
+  }
+
+  late final _wire_yoPtr = _lookup<
+          ffi.NativeFunction<
+              ffi.Void Function(
+                  ffi.Int64, ffi.Pointer<wire_cst_list_prim_u_8_strict>)>>(
+      'frbgen_frb_example_dart_minimal_wire_yo');
+  late final _wire_yo = _wire_yoPtr.asFunction<
+      void Function(int, ffi.Pointer<wire_cst_list_prim_u_8_strict>)>();
+
+  void
+      rust_arc_increment_strong_count_RustOpaque_flutter_rust_bridgefor_generatedRustAutoOpaqueInnerDartFnFutureResultStringu32(
+    ffi.Pointer<ffi.Void> ptr,
+  ) {
+    return _rust_arc_increment_strong_count_RustOpaque_flutter_rust_bridgefor_generatedRustAutoOpaqueInnerDartFnFutureResultStringu32(
+      ptr,
+    );
+  }
+
+  late final _rust_arc_increment_strong_count_RustOpaque_flutter_rust_bridgefor_generatedRustAutoOpaqueInnerDartFnFutureResultStringu32Ptr =
+      _lookup<ffi.NativeFunction<ffi.Void Function(ffi.Pointer<ffi.Void>)>>(
+          'frbgen_frb_example_dart_minimal_rust_arc_increment_strong_count_RustOpaque_flutter_rust_bridgefor_generatedRustAutoOpaqueInnerDartFnFutureResultStringu32');
+  late final _rust_arc_increment_strong_count_RustOpaque_flutter_rust_bridgefor_generatedRustAutoOpaqueInnerDartFnFutureResultStringu32 =
+      _rust_arc_increment_strong_count_RustOpaque_flutter_rust_bridgefor_generatedRustAutoOpaqueInnerDartFnFutureResultStringu32Ptr
+          .asFunction<void Function(ffi.Pointer<ffi.Void>)>();
+
+  void
+      rust_arc_decrement_strong_count_RustOpaque_flutter_rust_bridgefor_generatedRustAutoOpaqueInnerDartFnFutureResultStringu32(
+    ffi.Pointer<ffi.Void> ptr,
+  ) {
+    return _rust_arc_decrement_strong_count_RustOpaque_flutter_rust_bridgefor_generatedRustAutoOpaqueInnerDartFnFutureResultStringu32(
+      ptr,
+    );
+  }
+
+  late final _rust_arc_decrement_strong_count_RustOpaque_flutter_rust_bridgefor_generatedRustAutoOpaqueInnerDartFnFutureResultStringu32Ptr =
+      _lookup<ffi.NativeFunction<ffi.Void Function(ffi.Pointer<ffi.Void>)>>(
+          'frbgen_frb_example_dart_minimal_rust_arc_decrement_strong_count_RustOpaque_flutter_rust_bridgefor_generatedRustAutoOpaqueInnerDartFnFutureResultStringu32');
+  late final _rust_arc_decrement_strong_count_RustOpaque_flutter_rust_bridgefor_generatedRustAutoOpaqueInnerDartFnFutureResultStringu32 =
+      _rust_arc_decrement_strong_count_RustOpaque_flutter_rust_bridgefor_generatedRustAutoOpaqueInnerDartFnFutureResultStringu32Ptr
+          .asFunction<void Function(ffi.Pointer<ffi.Void>)>();
+
+  void
+      rust_arc_increment_strong_count_RustOpaque_flutter_rust_bridgefor_generatedRustAutoOpaqueInnerDartFnFutureString(
+    ffi.Pointer<ffi.Void> ptr,
+  ) {
+    return _rust_arc_increment_strong_count_RustOpaque_flutter_rust_bridgefor_generatedRustAutoOpaqueInnerDartFnFutureString(
+      ptr,
+    );
+  }
+
+  late final _rust_arc_increment_strong_count_RustOpaque_flutter_rust_bridgefor_generatedRustAutoOpaqueInnerDartFnFutureStringPtr =
+      _lookup<ffi.NativeFunction<ffi.Void Function(ffi.Pointer<ffi.Void>)>>(
+          'frbgen_frb_example_dart_minimal_rust_arc_increment_strong_count_RustOpaque_flutter_rust_bridgefor_generatedRustAutoOpaqueInnerDartFnFutureString');
+  late final _rust_arc_increment_strong_count_RustOpaque_flutter_rust_bridgefor_generatedRustAutoOpaqueInnerDartFnFutureString =
+      _rust_arc_increment_strong_count_RustOpaque_flutter_rust_bridgefor_generatedRustAutoOpaqueInnerDartFnFutureStringPtr
+          .asFunction<void Function(ffi.Pointer<ffi.Void>)>();
+
+  void
+      rust_arc_decrement_strong_count_RustOpaque_flutter_rust_bridgefor_generatedRustAutoOpaqueInnerDartFnFutureString(
+    ffi.Pointer<ffi.Void> ptr,
+  ) {
+    return _rust_arc_decrement_strong_count_RustOpaque_flutter_rust_bridgefor_generatedRustAutoOpaqueInnerDartFnFutureString(
+      ptr,
+    );
+  }
+
+  late final _rust_arc_decrement_strong_count_RustOpaque_flutter_rust_bridgefor_generatedRustAutoOpaqueInnerDartFnFutureStringPtr =
+      _lookup<ffi.NativeFunction<ffi.Void Function(ffi.Pointer<ffi.Void>)>>(
+          'frbgen_frb_example_dart_minimal_rust_arc_decrement_strong_count_RustOpaque_flutter_rust_bridgefor_generatedRustAutoOpaqueInnerDartFnFutureString');
+  late final _rust_arc_decrement_strong_count_RustOpaque_flutter_rust_bridgefor_generatedRustAutoOpaqueInnerDartFnFutureString =
+      _rust_arc_decrement_strong_count_RustOpaque_flutter_rust_bridgefor_generatedRustAutoOpaqueInnerDartFnFutureStringPtr
+          .asFunction<void Function(ffi.Pointer<ffi.Void>)>();
+
+  void
+      rust_arc_increment_strong_count_RustOpaque_flutter_rust_bridgefor_generatedRustAutoOpaqueInnerPinBoxdynFutureOutputResultStringu32Sendstatic(
+    ffi.Pointer<ffi.Void> ptr,
+  ) {
+    return _rust_arc_increment_strong_count_RustOpaque_flutter_rust_bridgefor_generatedRustAutoOpaqueInnerPinBoxdynFutureOutputResultStringu32Sendstatic(
+      ptr,
+    );
+  }
+
+  late final _rust_arc_increment_strong_count_RustOpaque_flutter_rust_bridgefor_generatedRustAutoOpaqueInnerPinBoxdynFutureOutputResultStringu32SendstaticPtr =
+      _lookup<ffi.NativeFunction<ffi.Void Function(ffi.Pointer<ffi.Void>)>>(
+          'frbgen_frb_example_dart_minimal_rust_arc_increment_strong_count_RustOpaque_flutter_rust_bridgefor_generatedRustAutoOpaqueInnerPinBoxdynFutureOutputResultStringu32Sendstatic');
+  late final _rust_arc_increment_strong_count_RustOpaque_flutter_rust_bridgefor_generatedRustAutoOpaqueInnerPinBoxdynFutureOutputResultStringu32Sendstatic =
+      _rust_arc_increment_strong_count_RustOpaque_flutter_rust_bridgefor_generatedRustAutoOpaqueInnerPinBoxdynFutureOutputResultStringu32SendstaticPtr
+          .asFunction<void Function(ffi.Pointer<ffi.Void>)>();
+
+  void
+      rust_arc_decrement_strong_count_RustOpaque_flutter_rust_bridgefor_generatedRustAutoOpaqueInnerPinBoxdynFutureOutputResultStringu32Sendstatic(
+    ffi.Pointer<ffi.Void> ptr,
+  ) {
+    return _rust_arc_decrement_strong_count_RustOpaque_flutter_rust_bridgefor_generatedRustAutoOpaqueInnerPinBoxdynFutureOutputResultStringu32Sendstatic(
+      ptr,
+    );
+  }
+
+  late final _rust_arc_decrement_strong_count_RustOpaque_flutter_rust_bridgefor_generatedRustAutoOpaqueInnerPinBoxdynFutureOutputResultStringu32SendstaticPtr =
+      _lookup<ffi.NativeFunction<ffi.Void Function(ffi.Pointer<ffi.Void>)>>(
+          'frbgen_frb_example_dart_minimal_rust_arc_decrement_strong_count_RustOpaque_flutter_rust_bridgefor_generatedRustAutoOpaqueInnerPinBoxdynFutureOutputResultStringu32Sendstatic');
+  late final _rust_arc_decrement_strong_count_RustOpaque_flutter_rust_bridgefor_generatedRustAutoOpaqueInnerPinBoxdynFutureOutputResultStringu32Sendstatic =
+      _rust_arc_decrement_strong_count_RustOpaque_flutter_rust_bridgefor_generatedRustAutoOpaqueInnerPinBoxdynFutureOutputResultStringu32SendstaticPtr
+          .asFunction<void Function(ffi.Pointer<ffi.Void>)>();
+
+  void
+      rust_arc_increment_strong_count_RustOpaque_flutter_rust_bridgefor_generatedRustAutoOpaqueInnerResultStringu32(
+    ffi.Pointer<ffi.Void> ptr,
+  ) {
+    return _rust_arc_increment_strong_count_RustOpaque_flutter_rust_bridgefor_generatedRustAutoOpaqueInnerResultStringu32(
+      ptr,
+    );
+  }
+
+  late final _rust_arc_increment_strong_count_RustOpaque_flutter_rust_bridgefor_generatedRustAutoOpaqueInnerResultStringu32Ptr =
+      _lookup<ffi.NativeFunction<ffi.Void Function(ffi.Pointer<ffi.Void>)>>(
+          'frbgen_frb_example_dart_minimal_rust_arc_increment_strong_count_RustOpaque_flutter_rust_bridgefor_generatedRustAutoOpaqueInnerResultStringu32');
+  late final _rust_arc_increment_strong_count_RustOpaque_flutter_rust_bridgefor_generatedRustAutoOpaqueInnerResultStringu32 =
+      _rust_arc_increment_strong_count_RustOpaque_flutter_rust_bridgefor_generatedRustAutoOpaqueInnerResultStringu32Ptr
+          .asFunction<void Function(ffi.Pointer<ffi.Void>)>();
+
+  void
+      rust_arc_decrement_strong_count_RustOpaque_flutter_rust_bridgefor_generatedRustAutoOpaqueInnerResultStringu32(
+    ffi.Pointer<ffi.Void> ptr,
+  ) {
+    return _rust_arc_decrement_strong_count_RustOpaque_flutter_rust_bridgefor_generatedRustAutoOpaqueInnerResultStringu32(
+      ptr,
+    );
+  }
+
+  late final _rust_arc_decrement_strong_count_RustOpaque_flutter_rust_bridgefor_generatedRustAutoOpaqueInnerResultStringu32Ptr =
+      _lookup<ffi.NativeFunction<ffi.Void Function(ffi.Pointer<ffi.Void>)>>(
+          'frbgen_frb_example_dart_minimal_rust_arc_decrement_strong_count_RustOpaque_flutter_rust_bridgefor_generatedRustAutoOpaqueInnerResultStringu32');
+  late final _rust_arc_decrement_strong_count_RustOpaque_flutter_rust_bridgefor_generatedRustAutoOpaqueInnerResultStringu32 =
+      _rust_arc_decrement_strong_count_RustOpaque_flutter_rust_bridgefor_generatedRustAutoOpaqueInnerResultStringu32Ptr
+          .asFunction<void Function(ffi.Pointer<ffi.Void>)>();
+
+  ffi.Pointer<wire_cst_list_prim_u_8_strict> cst_new_list_prim_u_8_strict(
+    int len,
+  ) {
+    return _cst_new_list_prim_u_8_strict(
+      len,
+    );
+  }
+
+  late final _cst_new_list_prim_u_8_strictPtr = _lookup<
+          ffi.NativeFunction<
+              ffi.Pointer<wire_cst_list_prim_u_8_strict> Function(ffi.Int32)>>(
+      'frbgen_frb_example_dart_minimal_cst_new_list_prim_u_8_strict');
+  late final _cst_new_list_prim_u_8_strict = _cst_new_list_prim_u_8_strictPtr
+      .asFunction<ffi.Pointer<wire_cst_list_prim_u_8_strict> Function(int)>();
+
+  int dummy_method_to_enforce_bundling() {
+    return _dummy_method_to_enforce_bundling();
+  }
+
+  late final _dummy_method_to_enforce_bundlingPtr =
+      _lookup<ffi.NativeFunction<ffi.Int64 Function()>>(
+          'dummy_method_to_enforce_bundling');
+  late final _dummy_method_to_enforce_bundling =
+      _dummy_method_to_enforce_bundlingPtr.asFunction<int Function()>();
+}
+
+typedef DartPostCObjectFnType
+    = ffi.Pointer<ffi.NativeFunction<DartPostCObjectFnTypeFunction>>;
+typedef DartPostCObjectFnTypeFunction = ffi.Bool Function(
+    DartPort port_id, ffi.Pointer<ffi.Void> message);
+typedef DartDartPostCObjectFnTypeFunction = bool Function(
+    DartDartPort port_id, ffi.Pointer<ffi.Void> message);
+typedef DartPort = ffi.Int64;
+typedef DartDartPort = int;
+
+final class wire_cst_list_prim_u_8_strict extends ffi.Struct {
+  external ffi.Pointer<ffi.Uint8> ptr;
+
+  @ffi.Int32()
+  external int len;
 }

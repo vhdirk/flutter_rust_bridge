@@ -4,6 +4,7 @@
 // Section: imports
 
 use super::*;
+use crate::api::minimal::*;
 use flutter_rust_bridge::for_generated::byteorder::{NativeEndian, ReadBytesExt, WriteBytesExt};
 use flutter_rust_bridge::for_generated::transform_result_dco;
 use flutter_rust_bridge::{Handler, IntoIntoDart};
@@ -11,3 +12,297 @@ use flutter_rust_bridge::{Handler, IntoIntoDart};
 // Section: boilerplate
 
 flutter_rust_bridge::frb_generated_boilerplate_io!();
+
+// Section: dart2rust
+
+impl CstDecode<DartFnFuture<Result<String, u32>>> for usize {
+    // Codec=Cst (C-struct based), see doc to use other codecs
+    fn cst_decode(self) -> DartFnFuture<Result<String, u32>> {
+        CstDecode::<
+            RustOpaqueNom<
+                flutter_rust_bridge::for_generated::RustAutoOpaqueInner<
+                    DartFnFuture<Result<String, u32>>,
+                >,
+            >,
+        >::cst_decode(self)
+        .rust_auto_opaque_decode_owned()
+    }
+}
+impl CstDecode<DartFnFuture<String>> for usize {
+    // Codec=Cst (C-struct based), see doc to use other codecs
+    fn cst_decode(self) -> DartFnFuture<String> {
+        CstDecode::<
+            RustOpaqueNom<
+                flutter_rust_bridge::for_generated::RustAutoOpaqueInner<DartFnFuture<String>>,
+            >,
+        >::cst_decode(self)
+        .rust_auto_opaque_decode_owned()
+    }
+}
+impl CstDecode<Pin<Box<dyn Future<Output = Result<String, u32>> + Send + 'static>>> for usize {
+    // Codec=Cst (C-struct based), see doc to use other codecs
+    fn cst_decode(self) -> Pin<Box<dyn Future<Output = Result<String, u32>> + Send + 'static>> {
+        CstDecode::<
+            RustOpaqueNom<
+                flutter_rust_bridge::for_generated::RustAutoOpaqueInner<
+                    Pin<Box<dyn Future<Output = Result<String, u32>> + Send + 'static>>,
+                >,
+            >,
+        >::cst_decode(self)
+        .rust_auto_opaque_decode_owned()
+    }
+}
+impl CstDecode<Result<String, u32>> for usize {
+    // Codec=Cst (C-struct based), see doc to use other codecs
+    fn cst_decode(self) -> Result<String, u32> {
+        CstDecode::<
+            RustOpaqueNom<
+                flutter_rust_bridge::for_generated::RustAutoOpaqueInner<Result<String, u32>>,
+            >,
+        >::cst_decode(self)
+        .rust_auto_opaque_decode_owned()
+    }
+}
+impl CstDecode<flutter_rust_bridge::DartOpaque> for *const std::ffi::c_void {
+    // Codec=Cst (C-struct based), see doc to use other codecs
+    fn cst_decode(self) -> flutter_rust_bridge::DartOpaque {
+        unsafe { flutter_rust_bridge::for_generated::cst_decode_dart_opaque(self as _) }
+    }
+}
+impl
+    CstDecode<
+        RustOpaqueNom<
+            flutter_rust_bridge::for_generated::RustAutoOpaqueInner<
+                DartFnFuture<Result<String, u32>>,
+            >,
+        >,
+    > for usize
+{
+    // Codec=Cst (C-struct based), see doc to use other codecs
+    fn cst_decode(
+        self,
+    ) -> RustOpaqueNom<
+        flutter_rust_bridge::for_generated::RustAutoOpaqueInner<DartFnFuture<Result<String, u32>>>,
+    > {
+        unsafe { decode_rust_opaque_nom(self as _) }
+    }
+}
+impl
+    CstDecode<
+        RustOpaqueNom<
+            flutter_rust_bridge::for_generated::RustAutoOpaqueInner<DartFnFuture<String>>,
+        >,
+    > for usize
+{
+    // Codec=Cst (C-struct based), see doc to use other codecs
+    fn cst_decode(
+        self,
+    ) -> RustOpaqueNom<flutter_rust_bridge::for_generated::RustAutoOpaqueInner<DartFnFuture<String>>>
+    {
+        unsafe { decode_rust_opaque_nom(self as _) }
+    }
+}
+impl
+    CstDecode<
+        RustOpaqueNom<
+            flutter_rust_bridge::for_generated::RustAutoOpaqueInner<
+                Pin<Box<dyn Future<Output = Result<String, u32>> + Send + 'static>>,
+            >,
+        >,
+    > for usize
+{
+    // Codec=Cst (C-struct based), see doc to use other codecs
+    fn cst_decode(
+        self,
+    ) -> RustOpaqueNom<
+        flutter_rust_bridge::for_generated::RustAutoOpaqueInner<
+            Pin<Box<dyn Future<Output = Result<String, u32>> + Send + 'static>>,
+        >,
+    > {
+        unsafe { decode_rust_opaque_nom(self as _) }
+    }
+}
+impl
+    CstDecode<
+        RustOpaqueNom<flutter_rust_bridge::for_generated::RustAutoOpaqueInner<Result<String, u32>>>,
+    > for usize
+{
+    // Codec=Cst (C-struct based), see doc to use other codecs
+    fn cst_decode(
+        self,
+    ) -> RustOpaqueNom<flutter_rust_bridge::for_generated::RustAutoOpaqueInner<Result<String, u32>>>
+    {
+        unsafe { decode_rust_opaque_nom(self as _) }
+    }
+}
+impl CstDecode<String> for *mut wire_cst_list_prim_u_8_strict {
+    // Codec=Cst (C-struct based), see doc to use other codecs
+    fn cst_decode(self) -> String {
+        let vec: Vec<u8> = self.cst_decode();
+        String::from_utf8(vec).unwrap()
+    }
+}
+impl CstDecode<Vec<u8>> for *mut wire_cst_list_prim_u_8_strict {
+    // Codec=Cst (C-struct based), see doc to use other codecs
+    fn cst_decode(self) -> Vec<u8> {
+        unsafe {
+            let wrap = flutter_rust_bridge::for_generated::box_from_leak_ptr(self);
+            flutter_rust_bridge::for_generated::vec_from_leak_ptr(wrap.ptr, wrap.len)
+        }
+    }
+}
+
+#[no_mangle]
+pub extern "C" fn frbgen_frb_example_dart_minimal_wire_greet(
+    port_: i64,
+    name: *mut wire_cst_list_prim_u_8_strict,
+) {
+    wire_greet_impl(port_, name)
+}
+
+#[no_mangle]
+pub extern "C" fn frbgen_frb_example_dart_minimal_wire_hallo(
+    name: *mut wire_cst_list_prim_u_8_strict,
+) -> flutter_rust_bridge::for_generated::WireSyncRust2DartDco {
+    wire_hallo_impl(name)
+}
+
+#[no_mangle]
+pub extern "C" fn frbgen_frb_example_dart_minimal_wire_hey(
+    port_: i64,
+    name: *mut wire_cst_list_prim_u_8_strict,
+) {
+    wire_hey_impl(port_, name)
+}
+
+#[no_mangle]
+pub extern "C" fn frbgen_frb_example_dart_minimal_wire_init_app(port_: i64) {
+    wire_init_app_impl(port_)
+}
+
+#[no_mangle]
+pub extern "C" fn frbgen_frb_example_dart_minimal_wire_minimal_adder(port_: i64, a: i32, b: i32) {
+    wire_minimal_adder_impl(port_, a, b)
+}
+
+#[no_mangle]
+pub extern "C" fn frbgen_frb_example_dart_minimal_wire_rust_function(
+    port_: i64,
+    dart_callback: *const std::ffi::c_void,
+) {
+    wire_rust_function_impl(port_, dart_callback)
+}
+
+#[no_mangle]
+pub extern "C" fn frbgen_frb_example_dart_minimal_wire_yo(
+    port_: i64,
+    name: *mut wire_cst_list_prim_u_8_strict,
+) {
+    wire_yo_impl(port_, name)
+}
+
+#[no_mangle]
+pub extern "C" fn frbgen_frb_example_dart_minimal_rust_arc_increment_strong_count_RustOpaque_flutter_rust_bridgefor_generatedRustAutoOpaqueInnerDartFnFutureResultStringu32(
+    ptr: *const std::ffi::c_void,
+) {
+    unsafe {
+        StdArc::<
+            flutter_rust_bridge::for_generated::RustAutoOpaqueInner<
+                DartFnFuture<Result<String, u32>>,
+            >,
+        >::increment_strong_count(ptr as _);
+    }
+}
+
+#[no_mangle]
+pub extern "C" fn frbgen_frb_example_dart_minimal_rust_arc_decrement_strong_count_RustOpaque_flutter_rust_bridgefor_generatedRustAutoOpaqueInnerDartFnFutureResultStringu32(
+    ptr: *const std::ffi::c_void,
+) {
+    unsafe {
+        StdArc::<
+            flutter_rust_bridge::for_generated::RustAutoOpaqueInner<
+                DartFnFuture<Result<String, u32>>,
+            >,
+        >::decrement_strong_count(ptr as _);
+    }
+}
+
+#[no_mangle]
+pub extern "C" fn frbgen_frb_example_dart_minimal_rust_arc_increment_strong_count_RustOpaque_flutter_rust_bridgefor_generatedRustAutoOpaqueInnerDartFnFutureString(
+    ptr: *const std::ffi::c_void,
+) {
+    unsafe {
+        StdArc::<flutter_rust_bridge::for_generated::RustAutoOpaqueInner<DartFnFuture < String >>>::increment_strong_count(ptr as _);
+    }
+}
+
+#[no_mangle]
+pub extern "C" fn frbgen_frb_example_dart_minimal_rust_arc_decrement_strong_count_RustOpaque_flutter_rust_bridgefor_generatedRustAutoOpaqueInnerDartFnFutureString(
+    ptr: *const std::ffi::c_void,
+) {
+    unsafe {
+        StdArc::<flutter_rust_bridge::for_generated::RustAutoOpaqueInner<DartFnFuture < String >>>::decrement_strong_count(ptr as _);
+    }
+}
+
+#[no_mangle]
+pub extern "C" fn frbgen_frb_example_dart_minimal_rust_arc_increment_strong_count_RustOpaque_flutter_rust_bridgefor_generatedRustAutoOpaqueInnerPinBoxdynFutureOutputResultStringu32Sendstatic(
+    ptr: *const std::ffi::c_void,
+) {
+    unsafe {
+        StdArc::<
+            flutter_rust_bridge::for_generated::RustAutoOpaqueInner<
+                Pin<Box<dyn Future<Output = Result<String, u32>> + Send + 'static>>,
+            >,
+        >::increment_strong_count(ptr as _);
+    }
+}
+
+#[no_mangle]
+pub extern "C" fn frbgen_frb_example_dart_minimal_rust_arc_decrement_strong_count_RustOpaque_flutter_rust_bridgefor_generatedRustAutoOpaqueInnerPinBoxdynFutureOutputResultStringu32Sendstatic(
+    ptr: *const std::ffi::c_void,
+) {
+    unsafe {
+        StdArc::<
+            flutter_rust_bridge::for_generated::RustAutoOpaqueInner<
+                Pin<Box<dyn Future<Output = Result<String, u32>> + Send + 'static>>,
+            >,
+        >::decrement_strong_count(ptr as _);
+    }
+}
+
+#[no_mangle]
+pub extern "C" fn frbgen_frb_example_dart_minimal_rust_arc_increment_strong_count_RustOpaque_flutter_rust_bridgefor_generatedRustAutoOpaqueInnerResultStringu32(
+    ptr: *const std::ffi::c_void,
+) {
+    unsafe {
+        StdArc::<flutter_rust_bridge::for_generated::RustAutoOpaqueInner<Result < String , u32 >>>::increment_strong_count(ptr as _);
+    }
+}
+
+#[no_mangle]
+pub extern "C" fn frbgen_frb_example_dart_minimal_rust_arc_decrement_strong_count_RustOpaque_flutter_rust_bridgefor_generatedRustAutoOpaqueInnerResultStringu32(
+    ptr: *const std::ffi::c_void,
+) {
+    unsafe {
+        StdArc::<flutter_rust_bridge::for_generated::RustAutoOpaqueInner<Result < String , u32 >>>::decrement_strong_count(ptr as _);
+    }
+}
+
+#[no_mangle]
+pub extern "C" fn frbgen_frb_example_dart_minimal_cst_new_list_prim_u_8_strict(
+    len: i32,
+) -> *mut wire_cst_list_prim_u_8_strict {
+    let ans = wire_cst_list_prim_u_8_strict {
+        ptr: flutter_rust_bridge::for_generated::new_leak_vec_ptr(Default::default(), len),
+        len,
+    };
+    flutter_rust_bridge::for_generated::new_leak_box_ptr(ans)
+}
+
+#[repr(C)]
+#[derive(Clone, Copy)]
+pub struct wire_cst_list_prim_u_8_strict {
+    ptr: *mut u8,
+    len: i32,
+}

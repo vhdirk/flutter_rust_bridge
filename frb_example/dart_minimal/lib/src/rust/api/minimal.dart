@@ -8,3 +8,98 @@ import 'package:flutter_rust_bridge/flutter_rust_bridge_for_generated.dart';
 
 Future<int> minimalAdder({required int a, required int b, dynamic hint}) =>
     RustLib.instance.api.minimalAdder(a: a, b: b, hint: hint);
+
+Future<DartFnFutureResultStringU32> greet(
+        {required String name, dynamic hint}) =>
+    RustLib.instance.api.greet(name: name, hint: hint);
+
+Future<PinBoxFutureOutputResultStringU32> hey(
+        {required String name, dynamic hint}) =>
+    RustLib.instance.api.hey(name: name, hint: hint);
+
+Future<DartFnFutureString> yo({required String name, dynamic hint}) =>
+    RustLib.instance.api.yo(name: name, hint: hint);
+
+DartFnFutureString hallo({required String name, dynamic hint}) =>
+    RustLib.instance.api.hallo(name: name, hint: hint);
+
+Future<void> rustFunction(
+        {required FutureOr<ResultStringU32> Function(String) dartCallback,
+        dynamic hint}) =>
+    RustLib.instance.api.rustFunction(dartCallback: dartCallback, hint: hint);
+
+// Rust type: RustOpaqueNom<flutter_rust_bridge::for_generated::RustAutoOpaqueInner<DartFnFuture < Result < String , u32 > >>>
+@sealed
+class DartFnFutureResultStringU32 extends RustOpaque {
+  DartFnFutureResultStringU32.dcoDecode(List<dynamic> wire)
+      : super.dcoDecode(wire, _kStaticData);
+
+  DartFnFutureResultStringU32.sseDecode(int ptr, int externalSizeOnNative)
+      : super.sseDecode(ptr, externalSizeOnNative, _kStaticData);
+
+  static final _kStaticData = RustArcStaticData(
+    rustArcIncrementStrongCount: RustLib.instance.api
+        .rust_arc_increment_strong_count_DartFnFutureResultStringU32,
+    rustArcDecrementStrongCount: RustLib.instance.api
+        .rust_arc_decrement_strong_count_DartFnFutureResultStringU32,
+    rustArcDecrementStrongCountPtr: RustLib.instance.api
+        .rust_arc_decrement_strong_count_DartFnFutureResultStringU32Ptr,
+  );
+}
+
+// Rust type: RustOpaqueNom<flutter_rust_bridge::for_generated::RustAutoOpaqueInner<DartFnFuture < String >>>
+@sealed
+class DartFnFutureString extends RustOpaque {
+  DartFnFutureString.dcoDecode(List<dynamic> wire)
+      : super.dcoDecode(wire, _kStaticData);
+
+  DartFnFutureString.sseDecode(int ptr, int externalSizeOnNative)
+      : super.sseDecode(ptr, externalSizeOnNative, _kStaticData);
+
+  static final _kStaticData = RustArcStaticData(
+    rustArcIncrementStrongCount:
+        RustLib.instance.api.rust_arc_increment_strong_count_DartFnFutureString,
+    rustArcDecrementStrongCount:
+        RustLib.instance.api.rust_arc_decrement_strong_count_DartFnFutureString,
+    rustArcDecrementStrongCountPtr: RustLib
+        .instance.api.rust_arc_decrement_strong_count_DartFnFutureStringPtr,
+  );
+}
+
+// Rust type: RustOpaqueNom<flutter_rust_bridge::for_generated::RustAutoOpaqueInner<Pin < Box < dyn Future < Output = Result < String , u32 > > + Send + 'static > >>>
+@sealed
+class PinBoxFutureOutputResultStringU32 extends RustOpaque {
+  PinBoxFutureOutputResultStringU32.dcoDecode(List<dynamic> wire)
+      : super.dcoDecode(wire, _kStaticData);
+
+  PinBoxFutureOutputResultStringU32.sseDecode(int ptr, int externalSizeOnNative)
+      : super.sseDecode(ptr, externalSizeOnNative, _kStaticData);
+
+  static final _kStaticData = RustArcStaticData(
+    rustArcIncrementStrongCount: RustLib.instance.api
+        .rust_arc_increment_strong_count_PinBoxFutureOutputResultStringU32,
+    rustArcDecrementStrongCount: RustLib.instance.api
+        .rust_arc_decrement_strong_count_PinBoxFutureOutputResultStringU32,
+    rustArcDecrementStrongCountPtr: RustLib.instance.api
+        .rust_arc_decrement_strong_count_PinBoxFutureOutputResultStringU32Ptr,
+  );
+}
+
+// Rust type: RustOpaqueNom<flutter_rust_bridge::for_generated::RustAutoOpaqueInner<Result < String , u32 >>>
+@sealed
+class ResultStringU32 extends RustOpaque {
+  ResultStringU32.dcoDecode(List<dynamic> wire)
+      : super.dcoDecode(wire, _kStaticData);
+
+  ResultStringU32.sseDecode(int ptr, int externalSizeOnNative)
+      : super.sseDecode(ptr, externalSizeOnNative, _kStaticData);
+
+  static final _kStaticData = RustArcStaticData(
+    rustArcIncrementStrongCount:
+        RustLib.instance.api.rust_arc_increment_strong_count_ResultStringU32,
+    rustArcDecrementStrongCount:
+        RustLib.instance.api.rust_arc_decrement_strong_count_ResultStringU32,
+    rustArcDecrementStrongCountPtr:
+        RustLib.instance.api.rust_arc_decrement_strong_count_ResultStringU32Ptr,
+  );
+}
